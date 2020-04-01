@@ -15,6 +15,6 @@ config adblock 'global'
 	option adb_dns 'unbound'
 	option adb_fetchutil 'curl'
 	option adb_repiface 'br-lan'
-	option adb_trigger 'lan'
 	option adb_report '1'
+	option adb_triggerdelay '2'
 
