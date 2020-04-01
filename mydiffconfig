@@ -1,0 +1,148 @@
+CONFIG_TARGET_x86=y
+CONFIG_TARGET_x86_64=y
+CONFIG_TARGET_x86_64_DEVICE_generic=y
+CONFIG_BWMNG_EXTENDEDSTATS=y
+CONFIG_BWMNG_TIME=y
+CONFIG_GRUB_TIMEOUT="1"
+# CONFIG_KERNEL_AIO is not set
+# CONFIG_KERNEL_CGROUPS is not set
+# CONFIG_KERNEL_FANOTIFY is not set
+# CONFIG_KERNEL_FHANDLE is not set
+# CONFIG_KERNEL_NAMESPACES is not set
+# CONFIG_KERNEL_SECCOMP is not set
+CONFIG_LIBCURL_COOKIES=y
+CONFIG_LIBCURL_FILE=y
+CONFIG_LIBCURL_FTP=y
+CONFIG_LIBCURL_HTTP=y
+CONFIG_LIBCURL_NGHTTP2=y
+CONFIG_LIBCURL_NO_SMB="!"
+CONFIG_LIBCURL_OPENSSL=y
+CONFIG_LIBCURL_PROXY=y
+CONFIG_OPENSSL_ENGINE=y
+CONFIG_OPENSSL_OPTIMIZE_SPEED=y
+CONFIG_OPENSSL_WITH_ASM=y
+CONFIG_OPENSSL_WITH_CHACHA_POLY1305=y
+CONFIG_OPENSSL_WITH_CMS=y
+CONFIG_OPENSSL_WITH_DEPRECATED=y
+CONFIG_OPENSSL_WITH_ERROR_MESSAGES=y
+CONFIG_OPENSSL_WITH_PSK=y
+CONFIG_OPENSSL_WITH_SRP=y
+CONFIG_OPENSSL_WITH_TLS13=y
+CONFIG_OPENVPN_openssl_ENABLE_DEF_AUTH=y
+CONFIG_OPENVPN_openssl_ENABLE_FRAGMENT=y
+CONFIG_OPENVPN_openssl_ENABLE_LZ4=y
+CONFIG_OPENVPN_openssl_ENABLE_LZO=y
+CONFIG_OPENVPN_openssl_ENABLE_MULTIHOME=y
+CONFIG_OPENVPN_openssl_ENABLE_PF=y
+CONFIG_OPENVPN_openssl_ENABLE_PORT_SHARE=y
+CONFIG_OPENVPN_openssl_ENABLE_SERVER=y
+CONFIG_OPENVPN_openssl_ENABLE_SMALL=y
+CONFIG_PACKAGE_adblock=y
+CONFIG_PACKAGE_bash=y
+CONFIG_PACKAGE_bwm-ng=y
+CONFIG_PACKAGE_ca-bundle=y
+CONFIG_PACKAGE_cgi-io=y
+CONFIG_PACKAGE_coreutils=y
+CONFIG_PACKAGE_coreutils-sort=y
+CONFIG_PACKAGE_curl=y
+# CONFIG_PACKAGE_dnsmasq is not set
+CONFIG_PACKAGE_ethtool=y
+CONFIG_PACKAGE_haveged=y
+CONFIG_PACKAGE_iperf3=y
+CONFIG_PACKAGE_iputils-ping=y
+CONFIG_PACKAGE_kmod-crypto-hash=y
+CONFIG_PACKAGE_kmod-crypto-md5=y
+CONFIG_PACKAGE_kmod-ledtrig-default-on=y
+CONFIG_PACKAGE_kmod-ledtrig-heartbeat=y
+CONFIG_PACKAGE_kmod-ledtrig-netdev=y
+CONFIG_PACKAGE_kmod-ledtrig-timer=y
+CONFIG_PACKAGE_kmod-tun=m
+CONFIG_PACKAGE_libcurl=y
+CONFIG_PACKAGE_libevent2=y
+CONFIG_PACKAGE_libevent2-core=y
+CONFIG_PACKAGE_libevent2-pthreads=y
+CONFIG_PACKAGE_libexpat=y
+CONFIG_PACKAGE_libhavege=y
+CONFIG_PACKAGE_libiwinfo=y
+CONFIG_PACKAGE_libiwinfo-lua=y
+CONFIG_PACKAGE_liblua=y
+CONFIG_PACKAGE_liblucihttp=y
+CONFIG_PACKAGE_liblucihttp-lua=y
+CONFIG_PACKAGE_liblzo=y
+CONFIG_PACKAGE_libmnl=y
+CONFIG_PACKAGE_libncurses=y
+CONFIG_PACKAGE_libnghttp2=y
+CONFIG_PACKAGE_libopenssl=y
+CONFIG_PACKAGE_libopenssl-conf=y
+CONFIG_PACKAGE_libpcap=y
+CONFIG_PACKAGE_libpcre=y
+CONFIG_PACKAGE_libpopt=y
+CONFIG_PACKAGE_libreadline=y
+CONFIG_PACKAGE_libstdcpp=y
+CONFIG_PACKAGE_libubus-lua=y
+CONFIG_PACKAGE_libunbound-heavy=m
+CONFIG_PACKAGE_libunbound-light=y
+CONFIG_PACKAGE_lua=y
+CONFIG_PACKAGE_luci=y
+CONFIG_PACKAGE_luci-app-adblock=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-opkg=y
+CONFIG_PACKAGE_luci-app-unbound=y
+CONFIG_PACKAGE_luci-base=y
+CONFIG_PACKAGE_luci-compat=y
+CONFIG_PACKAGE_luci-lib-ip=y
+CONFIG_PACKAGE_luci-lib-jsonc=y
+CONFIG_PACKAGE_luci-lib-nixio=y
+# CONFIG_PACKAGE_luci-lib-nixio_notls is not set
+CONFIG_PACKAGE_luci-lib-nixio_openssl=y
+CONFIG_PACKAGE_luci-mod-admin-full=y
+CONFIG_PACKAGE_luci-mod-network=y
+CONFIG_PACKAGE_luci-mod-status=y
+CONFIG_PACKAGE_luci-mod-system=y
+CONFIG_PACKAGE_luci-proto-ipv6=y
+CONFIG_PACKAGE_luci-proto-ppp=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+CONFIG_PACKAGE_luci-theme-material=y
+CONFIG_PACKAGE_luci-theme-openwrt=y
+CONFIG_PACKAGE_muninlite=y
+CONFIG_PACKAGE_nano=y
+CONFIG_PACKAGE_nmap=y
+CONFIG_PACKAGE_openssl-util=y
+CONFIG_PACKAGE_openvpn-openssl=m
+# CONFIG_PACKAGE_ppp is not set
+CONFIG_PACKAGE_rpcd=y
+CONFIG_PACKAGE_rpcd-mod-file=y
+CONFIG_PACKAGE_rpcd-mod-iwinfo=y
+CONFIG_PACKAGE_rpcd-mod-luci=y
+CONFIG_PACKAGE_rpcd-mod-rrdns=y
+CONFIG_PACKAGE_rsync=y
+CONFIG_PACKAGE_tcpdump=y
+CONFIG_PACKAGE_terminfo=y
+CONFIG_PACKAGE_uhttpd=y
+CONFIG_PACKAGE_uhttpd-mod-ubus=y
+CONFIG_PACKAGE_unbound-anchor=y
+CONFIG_PACKAGE_unbound-checkconf=y
+CONFIG_PACKAGE_unbound-control=y
+CONFIG_PACKAGE_unbound-control-setup=y
+CONFIG_PACKAGE_unbound-daemon=y
+CONFIG_PACKAGE_unbound-daemon-heavy=m
+CONFIG_PACKAGE_unbound-host=y
+CONFIG_PACKAGE_wget=y
+CONFIG_PACKAGE_xinetd=y
+CONFIG_PACKAGE_zlib=y
+CONFIG_PCRE_JIT_ENABLED=y
+CONFIG_RSYNC_zlib=y
+CONFIG_TARGET_KERNEL_PARTSIZE=32
+CONFIG_TARGET_ROOTFS_PARTSIZE=1024
+# CONFIG_TARGET_ROOTFS_SQUASHFS is not set
+# CONFIG_TARGET_ROOTFS_TARGZ is not set
+CONFIG_PACKAGE_kmod-lib-crc-ccitt=y
+# CONFIG_PACKAGE_kmod-mppe is not set
+CONFIG_PACKAGE_kmod-ppp=y
+# CONFIG_PACKAGE_kmod-ppp-synctty is not set
+# CONFIG_PACKAGE_kmod-pppoa is not set
+CONFIG_PACKAGE_kmod-pppoe=y
+# CONFIG_PACKAGE_kmod-pppol2tp is not set
+CONFIG_PACKAGE_kmod-pppox=y
+# CONFIG_PACKAGE_kmod-pptp is not set
+CONFIG_PACKAGE_kmod-slhc=y
