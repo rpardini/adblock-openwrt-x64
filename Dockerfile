@@ -27,10 +27,12 @@ USER buildman
 
 RUN make defconfig
 RUN make download -j20
+# Generate the diff config
+RUN scripts/diffconfig.sh > mydiffconfig
 
 # there should be a toolchain-build intermediary.
 
-RUN make -j8
+RUN make -j9
 
 RUN ls -laR /openwrt/bin
 
