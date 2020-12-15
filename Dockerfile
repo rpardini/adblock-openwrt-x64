@@ -3,7 +3,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN date
 RUN apt-get update -y
-RUN apt-get install -y eatmydata g++ zlib1g-dev build-essential git-core rsync man-db libncurses5-dev gawk gettext unzip file libssl-dev wget zlib1g-dev flex file automake bison patchelf findutils sudo squashfs-tools sudo time git-core subversion build-essential gcc-multilib libncurses5-dev zlib1g-dev gawk flex gettext wget unzip python3.8-dev
+RUN apt-get install -y eatmydata g++ zlib1g-dev build-essential git-core rsync man-db libncurses5-dev gawk gettext unzip file libssl-dev wget zlib1g-dev flex file automake bison patchelf findutils sudo squashfs-tools sudo time git-core subversion build-essential gcc-multilib libncurses5-dev zlib1g-dev gawk flex gettext wget unzip python3.8-dev python2.7-dev
 RUN apt-get clean
 
 RUN adduser --disabled-password --gecos '' --shell /bin/bash --home /buildman buildman
@@ -12,7 +12,7 @@ RUN chown buildman /openwrt
 USER buildman
 
 RUN whoami
-RUN git clone --depth 1 --branch "openwrt-19.07" git://git.openwrt.org/openwrt/openwrt.git /openwrt
+RUN git clone --branch "openwrt-19.07" git://git.openwrt.org/openwrt/openwrt.git /openwrt
 WORKDIR /openwrt
 
 RUN scripts/feeds update -a
