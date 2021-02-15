@@ -30,7 +30,10 @@ cp -p ${REPO}/config-c7v2 ${REPO}/config-c7v2.pre-diff
 echo "Prepare for Building..."
 cd ${OPENWRT}
 
+echo "Make download -j20..."
 make download -j20
+
+echo "Make defconfig..."
 make defconfig
 
 if [[ "a$1" == "aconfig" ]]; then
