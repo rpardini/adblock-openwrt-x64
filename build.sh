@@ -33,8 +33,10 @@ cd ${OPENWRT}
 make download -j20
 make defconfig
 
-if [[ "$1" == "config" ]]; then
+if [[ "a$1" == "aconfig" ]]; then
   echo "Menuconfig as requested..."
+else
+  echo "Skipping menuconfig. call with 'config' param to run menuconfig before building."
 fi
 
 echo "New diff config..."
