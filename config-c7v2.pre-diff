@@ -143,6 +143,7 @@ CONFIG_PACKAGE_liblucihttp-lua=y
 CONFIG_PACKAGE_liblzo=y
 CONFIG_PACKAGE_libmnl=y
 CONFIG_PACKAGE_libncurses=y
+CONFIG_PACKAGE_libncurses-dev=y
 CONFIG_PACKAGE_libopenssl=y
 CONFIG_PACKAGE_libopenssl-conf=y
 CONFIG_PACKAGE_libpcap=y
@@ -289,4 +290,3 @@ CONFIG_PACKAGE_kmod-hwmon-core=y
 # CONFIG_PACKAGE_kmod-pmbus-core is not set
 # CONFIG_PACKAGE_kmod-pmbus-zl6100 is not set
 CONFIG_PACKAGE_wireless-regdb=y
-CONFIG_PACKAGE_libncurses-dev=y
