@@ -1,5 +1,7 @@
 #! /bin/bash
 
+set -e
+
 BASEDIR=~/openwrt
 
 OPENWRT=${BASEDIR}/openwrt
@@ -15,6 +17,10 @@ if [[ ! -d ${OPENWRT} ]]; then
 else
   echo "Repo already there!"
 fi
+
+echo "Git Pulling..."
+cd ${REPO}
+git pull
 
 echo "Copying static files"...
 cp -vrp ${REPO}/files/* ${OPENWRT}/files/
@@ -40,5 +46,13 @@ make -j9 || make -j1 V=s
 
 echo "Deploy at TFTP server via sudo..."
 sudo cp -v ${OPENWRT}/bin/targets/ar71xx/generic/openwrt-ar71xx-generic-archer-c7-v2-squashfs-factory.bin /srv/tftp/ArcherC7v2_tp_recovery.bin
+
+
+echo "Git Commit/push..."
+cd ${REPO}
+git add .
+git commit -m 'build'
+git push
+
 
 echo "Done!"
