@@ -15,9 +15,9 @@ config interface 'lan'
 	option netmask '255.255.255.0'
 	option ipaddr '192.168.66.4'
 	option gateway '192.168.66.1'
-	option dns '8.8.8.8'
 	option ip6gw '2001:985:502d:1::'
-	option ip6addr '2001:985:502d:1:aaaa:bbbb:cccc:dddd/64'
+	list dns '8.8.8.8'
+	list ip6addr '2001:985:502d:1:aaaa:bbbb:cccc:dddd/64'
 
 config switch
 	option name 'switch0'
@@ -27,12 +27,5 @@ config switch
 config switch_vlan
 	option device 'switch0'
 	option vlan '1'
-	option ports '0t 1 2 3 4 5'
 	option vid '1'
-
-config switch_vlan
-	option device 'switch0'
-	option vlan '2'
-	option ports '6t'
-	option vid '2'
-
+	option ports '0t 1 2 3 4 5 6t'
