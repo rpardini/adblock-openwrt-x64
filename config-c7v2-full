@@ -2619,7 +2619,7 @@ CONFIG_PACKAGE_muninlite=y
 #
 # Libraries
 #
-# CONFIG_PACKAGE_libncurses-dev is not set
+CONFIG_PACKAGE_libncurses-dev=y
 # CONFIG_PACKAGE_zlib-dev is not set
 # CONFIG_PACKAGE_ar is not set
 # CONFIG_PACKAGE_autoconf is not set
