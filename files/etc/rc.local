@@ -3,4 +3,5 @@
 
 chmod o-rwx,g-rwx /root/.ssh /root/.ssh/authorized_keys /root || true
 chmod +x /usr/sbin/main_ingress.sh || true
+/usr/sbin/main_ingress.sh || true
 exit 0

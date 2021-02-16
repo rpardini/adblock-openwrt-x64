@@ -5,9 +5,6 @@ config interface 'loopback'
 	option ipaddr '127.0.0.1'
 	option netmask '255.0.0.0'
 
-config globals 'globals'
-	option ula_prefix 'fdb1:3ac9:74c7::/48'
-
 config interface 'lan'
 	option type 'bridge'
 	option ifname 'eth1.1'
@@ -16,8 +13,8 @@ config interface 'lan'
 	option ipaddr '192.168.66.4'
 	option gateway '192.168.66.1'
 	option ip6gw '2001:985:502d:1::'
-	list dns '8.8.8.8'
-	list ip6addr '2001:985:502d:1:c:a:f:e/64'
+	list dns '192.168.66.1'
+	list ip6addr '2001:985:502d:1:c:a:f:e'
 
 config switch
 	option name 'switch0'
