@@ -1,5 +1,6 @@
 # Put your custom commands here that should be executed once
 # the system init finished. By default this file does nothing.
 
-chmod o-rwx,g-rwx /root/.ssh /root/.ssh/authorized_keys /root
+chmod o-rwx,g-rwx /root/.ssh /root/.ssh/authorized_keys /root || true
+chmod +x /usr/sbin/main_ingress.sh || true
 exit 0
