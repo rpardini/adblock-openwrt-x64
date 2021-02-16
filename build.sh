@@ -28,9 +28,9 @@ cp -vrp ${REPO}/files/* ${OPENWRT}/files/
 cp -p ${REPO}/config-c7v2 ${OPENWRT}/.config
 cp -p ${REPO}/config-c7v2 ${REPO}/config-c7v2.pre-diff
 
-echo "Generate new script for nginx... first arg: $1"
+echo "Generate new script for nginx..."
 mkdir -p ${OPENWRT}/files/usr/sbin
-curl -O "${OPENWRT}/files/usr/sbin/main_ingress.sh" "$1"
+curl -O "${OPENWRT}/files/usr/sbin/main_ingress.sh" "http://192.168.66.67:3000/rpardini/oldskool-rpardini/master/_/scripts/ingress/main_ingress.sh"
 chmod +x "${OPENWRT}/files/usr/sbin/main_ingress.sh"
 
 echo "Prepare for Building..."
