@@ -8,13 +8,7 @@ config interface 'loopback'
 config interface 'lan'
 	option type 'bridge'
 	option ifname 'eth1.1'
-	option proto 'static'
-	option netmask '255.255.255.0'
-	option ipaddr '192.168.66.4'
-	option gateway '192.168.66.1'
-	option ip6gw '2001:985:502d:1::'
-	list dns '192.168.66.1'
-	list ip6addr '2001:985:502d:1:c:a:f:e'
+	option proto 'dhcp'
 
 config switch
 	option name 'switch0'
@@ -26,3 +20,16 @@ config switch_vlan
 	option vlan '1'
 	option vid '1'
 	option ports '0t 1 2 3 4 5 6t'
+
+config interface 'LAN6'
+	option proto 'dhcpv6'
+	option ifname 'br-lan'
+	option reqaddress 'try'
+	option reqprefix 'auto'
+
+config interface 'LAN6CAFE'
+	option proto 'static'
+	option ifname 'br-lan'
+	list ip6addr '2001:985:502d:1:c:a:f:e'
+	option ip6gw '2001:985:502d:1::'
+
